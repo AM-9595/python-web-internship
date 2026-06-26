@@ -2,6 +2,8 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from django.core.exceptions import ValidationError
+from rest_framework import serializers as drf_serializers
+
 from .models import Project, Task, Comment
 from .serializers import ProjectSerializer, TaskSerializer, CommentSerializer
 from .services import change_task_status
@@ -40,9 +42,9 @@ class TaskViewSet(viewsets.ModelViewSet):
         if new_status is not None and instance.status != new_status:
             try:
                 change_task_status(instance, new_status)
-                serializer.instance.refresh_from_db()
+                instance.refresh_from_db()
             except ValidationError as e:
-                raise serializers.ValidationError({'status': str(e)})
+                raise drf_serializers.ValidationError({'status': str(e)})
         else:
             serializer.save()
 
