@@ -14,8 +14,8 @@ class Order:
     def __init__(self, id, user, products, status):
         self.id = id
         self.user = user
-        self.products = products  # теперь обязательно передать список
-        self.status = status      # обязательно передать строку
+        self.products = products
+        self.status = status
 
     def total_price(self):
         total = 0
@@ -39,10 +39,7 @@ order = Order(100, user, [], "new")
 order.add_product(apple)
 order.add_product(banana)
 
-# Выводим сумму
 print(order.total_price())
 
-# Меняем статус
 order.change_status("поменяли")
 print(order.status)
-
