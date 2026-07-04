@@ -1,0 +1,117 @@
+INFO 2026-07-04 22:37:22,519 autoreload 19392 21320 Watching for file changes with StatReloader
+WARNING 2026-07-04 22:53:10,373 log 11296 19568 Not Found: /api/teams/1/add-member/
+INFO 2026-07-04 22:53:10,883 views 11296 19568 User 2 added to team 1 via view
+WARNING 2026-07-04 22:53:11,899 log 11296 19568 Bad Request: /api/tasks/1/
+WARNING 2026-07-04 22:53:12,407 services 11296 19568 User 1 not in team 2, cannot comment
+ERROR 2026-07-04 22:53:12,407 views 11296 19568 Permission error creating comment: User is not a member of the team
+WARNING 2026-07-04 22:53:12,407 log 11296 19568 Forbidden: /api/comments/
+INFO 2026-07-04 22:53:12,904 services 11296 19568 Comment created: id=1, task_id=1, user_id=1
+INFO 2026-07-04 22:53:12,905 views 11296 19568 Comment created via view: id=1
+INFO 2026-07-04 22:53:13,437 services 11296 19568 Project created: id=2, name=New Project, team_id=1
+INFO 2026-07-04 22:53:13,437 views 11296 19568 Project created via view: id=2
+INFO 2026-07-04 22:53:13,937 services 11296 19568 Task created: id=2, title=New Task, project_id=1
+INFO 2026-07-04 22:53:13,937 views 11296 19568 Task created via view: id=2
+INFO 2026-07-04 22:53:14,441 services 11296 19568 Team created: id=2, name=New Team, owner_id=1
+INFO 2026-07-04 22:53:14,441 views 11296 19568 Team created via view: id=2
+INFO 2026-07-04 23:00:09,262 autoreload 19392 21320 C:\Users\monster\python-web-internship\week_4\day_29\config\settings.py changed, reloading.
+INFO 2026-07-04 23:00:09,761 autoreload 14492 20144 Watching for file changes with StatReloader
+INFO 2026-07-04 23:01:15,354 autoreload 14492 20144 C:\Users\monster\python-web-internship\week_4\day_29\api\views.py changed, reloading.
+INFO 2026-07-04 23:01:15,843 autoreload 15920 17932 Watching for file changes with StatReloader
+INFO 2026-07-04 23:05:12,203 autoreload 19880 6988 Watching for file changes with StatReloader
+INFO 2026-07-04 23:10:41,783 log 19880 18636 "GET /api/register HTTP/1.1" 301 0
+WARNING 2026-07-04 23:10:41,813 log 19880 18636 Method Not Allowed: /api/register/
+WARNING 2026-07-04 23:10:41,814 log 19880 18636 "GET /api/register/ HTTP/1.1" 405 40
+ERROR 2026-07-04 23:10:47,459 log 19880 18636 Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-07-04 23:10:47,464 log 19880 18636 "POST /api/register HTTP/1.1" 500 70657
+WARNING 2026-07-04 23:11:49,392 log 19880 8404 Bad Request: /api/token/
+WARNING 2026-07-04 23:11:49,393 log 19880 8404 "POST /api/token/ HTTP/1.1" 400 79
+WARNING 2026-07-04 23:12:37,155 log 19880 8404 Bad Request: /api/register/
+WARNING 2026-07-04 23:12:37,157 log 19880 8404 "POST /api/register/ HTTP/1.1" 400 79
+WARNING 2026-07-04 23:12:42,204 log 19880 8404 Bad Request: /api/register/
+WARNING 2026-07-04 23:12:42,205 log 19880 8404 "POST /api/register/ HTTP/1.1" 400 79
+WARNING 2026-07-04 23:12:45,073 log 19880 8404 Bad Request: /api/register/
+WARNING 2026-07-04 23:12:45,074 log 19880 8404 "POST /api/register/ HTTP/1.1" 400 79
+ERROR 2026-07-04 23:12:52,835 log 19880 8404 Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-07-04 23:12:52,839 log 19880 8404 "POST /api/register HTTP/1.1" 500 70651
+ERROR 2026-07-04 23:13:15,848 log 19880 14348 Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-07-04 23:13:15,851 log 19880 14348 "POST /api/register HTTP/1.1" 500 70658
+ERROR 2026-07-04 23:13:40,672 log 19880 6776 Internal Server Error: /api/token
+Traceback (most recent call last):
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-07-04 23:13:40,675 log 19880 6776 "POST /api/token HTTP/1.1" 500 70603
+ERROR 2026-07-04 23:13:55,816 log 19880 5992 Internal Server Error: /api/token
+Traceback (most recent call last):
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\monster\python-web-internship\week_4\day_29\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-07-04 23:13:55,818 log 19880 5992 "POST /api/token HTTP/1.1" 500 70610
+WARNING 2026-07-04 23:14:48,770 log 19880 20792 Unauthorized: /api/token/
+WARNING 2026-07-04 23:14:48,771 log 19880 20792 "POST /api/token/ HTTP/1.1" 401 63
+INFO 2026-07-04 23:15:38,709 log 19880 20792 "POST /api/register/ HTTP/1.1" 201 55
+INFO 2026-07-04 23:15:55,047 log 19880 20792 "POST /api/token/ HTTP/1.1" 200 489
+WARNING 2026-07-04 23:17:57,810 log 19880 5420 Unauthorized: /api/teams/
+WARNING 2026-07-04 23:17:57,811 log 19880 5420 "POST /api/teams/ HTTP/1.1" 401 107
+INFO 2026-07-04 23:19:41,672 log 19880 14500 "POST /api/token/ HTTP/1.1" 200 489
+INFO 2026-07-04 23:25:13,076 log 19880 7900 "POST /api/token/ HTTP/1.1" 200 489
+INFO 2026-07-04 23:26:00,875 services 19880 7900 Team created: id=1, name=DevTeam, owner_id=1
+INFO 2026-07-04 23:26:00,876 views 19880 7900 Team created via view: id=1
+INFO 2026-07-04 23:26:00,879 log 19880 7900 "POST /api/teams/ HTTP/1.1" 201 49
